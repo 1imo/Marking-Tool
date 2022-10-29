@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marking Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <h1 class="name">Marking Tool</h1>
+        <div class="header--options">
+            <button class="modeChange addMarks">Add Marks</button>
+            <button class="modeChange percentages">Percentages</button>
+            <button class="modeChange gradeBoundaries">Grade Boundaries</button>
+        </div>
+    </section>
+
+    <section class="console">
+        <div class="inputs"></div>
+        <div class="inputCont">
+            <img src="/assets/chevron-right--white.svg" alt="Arrow" class="console--arrow">
+            <input type="text" class="consoleInput">
+        </div>
+    </section>
+
+    <section class="alertCont hidden">
+        <div class="alert normParams">
+            <h2 class="alert--title">Set your parameters</h2>
+            <div class="alert--parameters">
+                <!-- <div class="changeQuesCount parameters"> -->
+                    <input type=""text placeholder="Question Count" class="questionCount">
+                    <!-- <img src="/assets/chevron-down.svg" alt="Arrow"> -->
+                <!-- </div> -->
+                <!-- <div class="totalMarksCount parameters"> -->
+                    <input type=""text placeholder="Total Marks" class="totalMarks">
+                    <!-- <img src="/assets/chevron-down.svg" alt="Arrow"> -->
+                <!-- </div> -->
+            </div>
+            <div class="submitBtn">
+                <h3 class="alert--submit">Submit</h3>
+                <img src="/assets/chevron-right.svg" alt="Arrow">
+            </div>
+        </div>
+
+        <div class="alert boundaryParams hidden ">
+            <h2 class="alert--title">Set your Grade Boundaries</h2>
+            <div class="alert--parameters hidden">
+                    <input type=""text placeholder="Boundary count" class="boundaryCount">
+            </div>
+
+            <div class="inputGradeBounds">
+                <input type="text" placeholder="Grade" class="grade">
+                <input type="text" placeholder="%" class="gradeBoundary">
+            </div>
+
+            <div class="submitBtn">
+                <h3 class="alert--submit">Submit</h3>
+                <img src="/assets/chevron-right.svg" alt="Arrow">
+            </div>
+
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
